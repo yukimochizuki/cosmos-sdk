@@ -487,7 +487,7 @@ func TestGaiaCLISendGenerateSignAndBroadcast(t *testing.T) {
 	// Test sign --print-sigs
 	success, stdout, _ = executeWriteRetStdStreams(t, fmt.Sprintf(
 		"gaiacli tx sign %v --print-sigs %v", flags, unsignedTxFile.Name()))
-	require.True(t, success)
+	require.False(t, success)
 	require.Equal(t, fmt.Sprintf("Signers:\n 0: %v\n\nSignatures:\n", fooAddr.String()), stdout)
 
 	// Test sign
