@@ -72,6 +72,7 @@ func main() {
 		stakecmd.GetCmdQueryDelegations(storeStake, cdc),
 		stakecmd.GetCmdQueryParams(storeStake, cdc),
 		stakecmd.GetCmdQueryPool(storeStake, cdc),
+		govcmd.GetCmdQueryProcedure(storeGov, cdc),
 		govcmd.GetCmdQueryProposal(storeGov, cdc),
 		govcmd.GetCmdQueryProposals(storeGov, cdc),
 		govcmd.GetCmdQueryDeposit(storeGov, cdc),

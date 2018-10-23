@@ -17,6 +17,7 @@ import (
 // REST Variable names
 // nolint
 const (
+	RestProcedureType  = "procedure-type"
 	RestProposalID     = "proposal-id"
 	RestDepositer      = "depositer"
 	RestVoter          = "voter"
@@ -30,6 +31,8 @@ func RegisterRoutes(cliCtx context.CLIContext, r *mux.Router, cdc *codec.Codec) 
 	r.HandleFunc("/gov/proposals", postProposalHandlerFn(cdc, cliCtx)).Methods("POST")
 	r.HandleFunc(fmt.Sprintf("/gov/proposals/{%s}/deposits", RestProposalID), depositHandlerFn(cdc, cliCtx)).Methods("POST")
 	r.HandleFunc(fmt.Sprintf("/gov/proposals/{%s}/votes", RestProposalID), voteHandlerFn(cdc, cliCtx)).Methods("POST")
+
+	r.HandleFunc(fmt.Sprintf("/gov/procedure/{%s}", RestProcedureType), queryProcedureHandlerFn(cdc, cliCtx)).Methods("GET")
 
 	r.HandleFunc("/gov/proposals", queryProposalsWithParameterFn(cdc, cliCtx)).Methods("GET")
 	r.HandleFunc(fmt.Sprintf("/gov/proposals/{%s}", RestProposalID), queryProposalHandlerFn(cdc, cliCtx)).Methods("GET")
@@ -160,6 +163,21 @@ func voteHandlerFn(cdc *codec.Codec, cliCtx context.CLIContext) http.HandlerFunc
 		}
 
 		utils.CompleteAndBroadcastTxREST(w, r, cliCtx, baseReq, []sdk.Msg{msg}, cdc)
+	}
+}
+
+func queryProcedureHandlerFn(cdc *codec.Codec, cliCtx context.CLIContext) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		vars := mux.Vars(r)
+		procedureType := vars[RestProcedureType]
+
+		res, err := cliCtx.QueryWithData(fmt.Sprintf("custom/gov/procedure/%s", procedureType), nil)
+		if err != nil {
+			utils.WriteErrorResponse(w, http.StatusNotFound, err.Error())
+			return
+		}
+
+		utils.PostProcessResponse(w, cdc, res, cliCtx.Indent)
 	}
 }
 
