@@ -47,6 +47,24 @@ BREAKING CHANGES
     * [simulation] \#2162 Added back correct supply invariants
     * [x/slashing] \#2430 Simulate more slashes, check if validator is jailed before jailing
     * [x/stake] \#2393 Removed `CompleteUnbonding` and `CompleteRedelegation` Msg types, and instead added unbonding/redelegation queues to endblocker
+    * [x/mock/simulation] \#2501 Simulate transactions & invariants for fee distribution, and fix bugs discovered in the process
+      * [x/auth] Simulate random fee payments
+      * [cmd/gaia/app] Simulate non-zero inflation
+      * [x/stake] Call hooks correctly in several cases related to delegation/validator updates
+      * [x/stake] Check full supply invariants, including yet-to-be-withdrawn fees
+      * [x/stake] Remove no-longer-in-use store key
+      * [x/slashing] Call hooks correctly when a validator is slashed
+      * [x/slashing] Truncate withdrawals (unbonding, redelegation) and burn change
+      * [x/mock/simulation] Ensure the simulation cannot set a proposer address of nil
+      * [x/mock/simulation] Add more event logs on begin block / end block for clarity
+      * [x/mock/simulation] Correctly set validator power in abci.RequestBeginBlock
+      * [x/minting] Correctly call stake keeper to track inflated supply
+      * [x/distribution] Sanity check for nonexistent rewards
+      * [x/distribution] Truncate withdrawals and return change to the community pool
+      * [x/distribution] Add sanity checks for incorrect accum / total accum relations
+      * [x/distribution] Correctly calculate total power using Tendermint updates
+      * [x/distribution] Simulate withdrawal transactions
+      * [x/distribution] Fix a bug where the fee pool was not correctly tracked on WithdrawDelegatorRewardsAll
     * [x/stake] \#1673 Validators are no longer deleted until they can no longer possibly be slashed
     * [\#1890](https://github.com/cosmos/cosmos-sdk/issues/1890) Start chain with initial state + sequence of transactions
       * [cli] Rename `gaiad init gentx` to `gaiad gentx`.
@@ -88,6 +106,7 @@ BREAKING CHANGES
     * [x/stake] \#2531 Remove all inflation logic
     * [x/mint] \#2531 Add minting module and inflation logic
     * [x/auth] [\#2540](https://github.com/cosmos/cosmos-sdk/issues/2540) Rename `AccountMapper` to `AccountKeeper`.
+    * [types] \#2456 Renamed msg.Name() and msg.Type() to msg.Type() and msg.Route() respectively
 
 * Tendermint
   * Update tendermint version from v0.23.0 to v0.25.0, notable changes
@@ -109,7 +128,7 @@ FEATURES
   * [gaia-lite] [\#966](https://github.com/cosmos/cosmos-sdk/issues/966) Add support for `generate_only=true` query argument to generate offline unsigned transactions
   * [gaia-lite] [\#1953](https://github.com/cosmos/cosmos-sdk/issues/1953) Add /sign endpoint to sign transactions generated with `generate_only=true`.
   * [gaia-lite] [\#1954](https://github.com/cosmos/cosmos-sdk/issues/1954) Add /broadcast endpoint to broadcast transactions signed by the /sign endpoint.
-  * [gaia-lite] [\#2113](https://github.com/cosmos/cosmos-sdk/issues/2113) Rename `/accounts/{address}/send` to `/bank/accounts/{address}/transfers`, rename `/accounts/{address}` to `/auth/accounts/{address}`
+  * [gaia-lite] [\#2113](https://github.com/cosmos/cosmos-sdk/issues/2113) Rename `/accounts/{address}/send` to `/bank/accounts/{address}/transfers`, rename `/accounts/{address}` to `/auth/accounts/{address}`, replace `proposal-id` with `proposalId` in all gov endpoints
   * [gaia-lite] [\#2478](https://github.com/cosmos/cosmos-sdk/issues/2478) Add query gov proposal's deposits endpoint
   * [gaia-lite] [\#2477](https://github.com/cosmos/cosmos-sdk/issues/2477) Add query validator's outgoing redelegations and unbonding delegations endpoints
 
@@ -132,6 +151,7 @@ FEATURES
   * [stake][cli] [\#1890](https://github.com/cosmos/cosmos-sdk/issues/1890) Add `--genesis-format` flag to `gaiacli tx create-validator` to produce transactions in genesis-friendly format.
   * [cli] [\#2524](https://github.com/cosmos/cosmos-sdk/issues/2524) Add support offline mode to `gaiacli tx sign`. Lookups are not performed if the flag `--offline` is on.
   * [cli] [\#2558](https://github.com/cosmos/cosmos-sdk/issues/2558) Improve --print-sigs mode. It now performs a complete set of sanity checks and reports to the user. Also added --raw-signature to print the signature only, not the whole transaction.
+  * [cli] [\#2554](https://github.com/cosmos/cosmos-sdk/issues/2554) Make `gaiacli keys show` multisig ready.
 
 * Gaia
   * [cli] #2170 added ability to show the node's address via `gaiad tendermint show-address`
@@ -166,6 +186,8 @@ IMPROVEMENTS
 * Gaia CLI  (`gaiacli`)
     * [cli] #2060 removed `--select` from `block` command
     * [cli] #2128 fixed segfault when exporting directly after `gaiad init`
+    * [cli] [\#1255](https://github.com/cosmos/cosmos-sdk/issues/1255) open KeyBase in read-only mode
+     for query-purpose CLI commands
 
 * Gaia
     * [x/stake] [#2023](https://github.com/cosmos/cosmos-sdk/pull/2023) Terminate iteration loop in `UpdateBondedValidators` and `UpdateBondedValidatorsFull` when the first revoked validator is encountered and perform a sanity check.
