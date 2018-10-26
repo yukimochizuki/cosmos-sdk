@@ -55,7 +55,7 @@ following delegation and commission default parameters:
 			if err != nil {
 				return err
 			}
-			genDoc, err  := loadGenesisDoc(cdc, config.GenesisFile())
+			genDoc, err := loadGenesisDoc(cdc, config.GenesisFile())
 			if err != nil {
 				return err
 			}
@@ -93,7 +93,7 @@ following delegation and commission default parameters:
 
 func prepareFlagsForTxCreateValidator(config *cfg.Config, nodeID, ip, chainID string,
 	valPubKey crypto.PubKey) {
-	viper.Set(tmcli.HomeFlag, viper.GetString(flagClientHome))     // --home
+	viper.Set(tmcli.HomeFlag, viper.GetString(flagClientHome)) // --home
 	viper.Set(client.FlagChainID, chainID)
 	viper.Set(client.FlagFrom, viper.GetString(client.FlagName))   // --from
 	viper.Set(cli.FlagNodeID, nodeID)                              // --node-id
