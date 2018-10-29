@@ -1,12 +1,12 @@
 package cli
 
 import (
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/stake"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/yukimochizuki/cosmos-sdk/client/context"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	authcmd "github.com/yukimochizuki/cosmos-sdk/x/auth/client/cli"
+	"github.com/yukimochizuki/cosmos-sdk/x/stake"
+	"github.com/yukimochizuki/cosmos-sdk/x/stake/types"
 	"github.com/pkg/errors"
 )
 

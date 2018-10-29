@@ -1,13 +1,13 @@
 package cli
 
 import (
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/utils"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	authtxb "github.com/cosmos/cosmos-sdk/x/auth/client/txbuilder"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
+	"github.com/yukimochizuki/cosmos-sdk/client/context"
+	"github.com/yukimochizuki/cosmos-sdk/client/utils"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	authcmd "github.com/yukimochizuki/cosmos-sdk/x/auth/client/cli"
+	authtxb "github.com/yukimochizuki/cosmos-sdk/x/auth/client/txbuilder"
+	"github.com/yukimochizuki/cosmos-sdk/x/slashing"
 
 	"github.com/spf13/cobra"
 )

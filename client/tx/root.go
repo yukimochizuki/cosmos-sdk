@@ -4,8 +4,8 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/client/context"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
 )
 
 // AddCommands adds a number of tx-query related subcommands

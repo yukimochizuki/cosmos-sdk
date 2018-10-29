@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/stake/types"
 )
 
 // return a specific delegation
@@ -474,7 +474,7 @@ func (k Keeper) getBeginInfo(ctx sdk.Context, valSrcAddr sdk.ValAddress) (
 func (k Keeper) BeginUnbonding(ctx sdk.Context,
 	delAddr sdk.AccAddress, valAddr sdk.ValAddress, sharesAmount sdk.Dec) (types.UnbondingDelegation, sdk.Error) {
 
-	// TODO quick fix, instead we should use an index, see https://github.com/cosmos/cosmos-sdk/issues/1402
+	// TODO quick fix, instead we should use an index, see https://github.com/yukimochizuki/cosmos-sdk/issues/1402
 	_, found := k.GetUnbondingDelegation(ctx, delAddr, valAddr)
 	if found {
 		return types.UnbondingDelegation{}, types.ErrExistingUnbondingDelegation(k.Codespace())
@@ -542,7 +542,7 @@ func (k Keeper) BeginRedelegation(ctx sdk.Context, delAddr sdk.AccAddress,
 	valSrcAddr, valDstAddr sdk.ValAddress, sharesAmount sdk.Dec) (types.Redelegation, sdk.Error) {
 
 	// check if there is already a redelgation in progress from src to dst
-	// TODO quick fix, instead we should use an index, see https://github.com/cosmos/cosmos-sdk/issues/1402
+	// TODO quick fix, instead we should use an index, see https://github.com/yukimochizuki/cosmos-sdk/issues/1402
 	_, found := k.GetRedelegation(ctx, delAddr, valSrcAddr, valDstAddr)
 	if found {
 		return types.Redelegation{}, types.ErrConflictingRedelegation(k.Codespace())

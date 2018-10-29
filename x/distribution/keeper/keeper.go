@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	"github.com/cosmos/cosmos-sdk/x/params"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/distribution/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/params"
 )
 
 // keeper of the stake store

@@ -1,7 +1,7 @@
 package simplestake
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 )
 
 // NewHandler returns a handler for "simplestake" type messages.

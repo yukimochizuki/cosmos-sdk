@@ -342,7 +342,7 @@ Some considerations about the voting process:
 - Voters can choose between options `Yes`, `No`, `NoWithVeto` and `Abstain`
   At the end of the voting period, a proposal is accepted if `(YesVotes/(YesVotes+NoVotes+NoWithVetoVotes))>1/2` and `(NoWithVetoVotes/(YesVotes+NoVotes+NoWithVetoVotes))<1/3`. It is rejected otherwise
 
-For more information about the governance process and how it works, please check out the Governance module [specification](https://github.com/cosmos/cosmos-sdk/tree/develop/docs/spec/governance).
+For more information about the governance process and how it works, please check out the Governance module [specification](https://github.com/yukimochizuki/cosmos-sdk/tree/develop/docs/spec/governance).
 
 #### Create a Governance proposal
 

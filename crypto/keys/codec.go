@@ -1,7 +1,7 @@
 package keys
 
 import (
-	ccrypto "github.com/cosmos/cosmos-sdk/crypto"
+	ccrypto "github.com/yukimochizuki/cosmos-sdk/crypto"
 	amino "github.com/tendermint/go-amino"
 	"github.com/tendermint/tendermint/crypto/encoding/amino"
 )

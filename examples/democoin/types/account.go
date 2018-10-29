@@ -1,12 +1,12 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/auth"
 
-	"github.com/cosmos/cosmos-sdk/examples/democoin/x/cool"
-	"github.com/cosmos/cosmos-sdk/examples/democoin/x/pow"
+	"github.com/yukimochizuki/cosmos-sdk/examples/democoin/x/cool"
+	"github.com/yukimochizuki/cosmos-sdk/examples/democoin/x/pow"
 )
 
 var _ auth.Account = (*AppAccount)(nil)

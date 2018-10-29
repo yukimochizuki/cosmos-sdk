@@ -6,10 +6,10 @@ import (
 
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	stake "github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/params"
+	stake "github.com/yukimochizuki/cosmos-sdk/x/stake/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/crypto"
 )

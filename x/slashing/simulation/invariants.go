@@ -1,8 +1,8 @@
 package simulation
 
 import (
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
+	"github.com/yukimochizuki/cosmos-sdk/baseapp"
+	"github.com/yukimochizuki/cosmos-sdk/x/mock/simulation"
 	abci "github.com/tendermint/tendermint/abci/types"
 )
 

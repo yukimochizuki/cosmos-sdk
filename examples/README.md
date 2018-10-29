@@ -11,13 +11,13 @@ You will need to have go installed on your computer. Please refer to the [cosmos
 Once you have go installed, run the command:
 
 ```
-go get github.com/cosmos/cosmos-sdk
+go get github.com/yukimochizuki/cosmos-sdk
 ```
 
-There will be an error stating `can't load package: package github.com/cosmos/cosmos-sdk: no Go files`, however you can ignore this error, it doesn't affect us. Now change directories to:
+There will be an error stating `can't load package: package github.com/yukimochizuki/cosmos-sdk: no Go files`, however you can ignore this error, it doesn't affect us. Now change directories to:
 
 ```
-cd $GOPATH/src/github.com/cosmos/cosmos-sdk
+cd $GOPATH/src/github.com/yukimochizuki/cosmos-sdk
 ```
 
 And run :

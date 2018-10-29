@@ -9,11 +9,11 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	auth "github.com/cosmos/cosmos-sdk/x/auth"
-	bank "github.com/cosmos/cosmos-sdk/x/bank"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/store"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	auth "github.com/yukimochizuki/cosmos-sdk/x/auth"
+	bank "github.com/yukimochizuki/cosmos-sdk/x/bank"
 )
 
 // possibly share this kind of setup functionality between module testsuites?

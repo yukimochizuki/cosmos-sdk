@@ -10,12 +10,12 @@ import (
 
 	"github.com/cosmos/go-bip39"
 
-	"github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/mintkey"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/crypto"
+	"github.com/yukimochizuki/cosmos-sdk/crypto/keys/hd"
+	"github.com/yukimochizuki/cosmos-sdk/crypto/keys/mintkey"
+	"github.com/yukimochizuki/cosmos-sdk/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/keyerror"
+	"github.com/yukimochizuki/cosmos-sdk/crypto/keys/keyerror"
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/encoding/amino"
 	"github.com/tendermint/tendermint/crypto/secp256k1"

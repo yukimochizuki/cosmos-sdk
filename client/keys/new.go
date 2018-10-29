@@ -8,9 +8,9 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/hd"
+	"github.com/yukimochizuki/cosmos-sdk/client"
+	"github.com/yukimochizuki/cosmos-sdk/crypto/keys"
+	"github.com/yukimochizuki/cosmos-sdk/crypto/keys/hd"
 )
 
 const (

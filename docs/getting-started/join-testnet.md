@@ -70,7 +70,7 @@ Make sure that every node has a unique `priv_validator.json`. Do not copy the `p
 Now it is time to upgrade the software:
 
 ```bash
-cd $GOPATH/src/github.com/cosmos/cosmos-sdk
+cd $GOPATH/src/github.com/yukimochizuki/cosmos-sdk
 git fetch --all && git checkout master
 make update_tools && make get_vendor_deps && make install
 ```
@@ -78,7 +78,7 @@ make update_tools && make get_vendor_deps && make install
 Note we use `master` here since it contains the latest stable release.
 See the [testnet repo](https://github.com/cosmos/testnets) 
 for details on which version is needed for which testnet, 
-and the [SDK release page](https://github.com/cosmos/cosmos-sdk/releases) 
+and the [SDK release page](https://github.com/yukimochizuki/cosmos-sdk/releases) 
 for details on each release.
 
 Your full node has been cleanly upgraded!

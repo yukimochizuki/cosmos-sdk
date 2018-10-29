@@ -9,22 +9,22 @@ import (
 
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	"github.com/cosmos/cosmos-sdk/client/lcd"
-	"github.com/cosmos/cosmos-sdk/client/rpc"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/yukimochizuki/cosmos-sdk/client"
+	"github.com/yukimochizuki/cosmos-sdk/client/keys"
+	"github.com/yukimochizuki/cosmos-sdk/client/lcd"
+	"github.com/yukimochizuki/cosmos-sdk/client/rpc"
+	"github.com/yukimochizuki/cosmos-sdk/client/tx"
+	"github.com/yukimochizuki/cosmos-sdk/cmd/gaia/app"
+	"github.com/yukimochizuki/cosmos-sdk/version"
 
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	bankcmd "github.com/cosmos/cosmos-sdk/x/bank/client/cli"
-	distrcmd "github.com/cosmos/cosmos-sdk/x/distribution/client/cli"
-	govcmd "github.com/cosmos/cosmos-sdk/x/gov/client/cli"
-	slashingcmd "github.com/cosmos/cosmos-sdk/x/slashing/client/cli"
-	stakecmd "github.com/cosmos/cosmos-sdk/x/stake/client/cli"
+	authcmd "github.com/yukimochizuki/cosmos-sdk/x/auth/client/cli"
+	bankcmd "github.com/yukimochizuki/cosmos-sdk/x/bank/client/cli"
+	distrcmd "github.com/yukimochizuki/cosmos-sdk/x/distribution/client/cli"
+	govcmd "github.com/yukimochizuki/cosmos-sdk/x/gov/client/cli"
+	slashingcmd "github.com/yukimochizuki/cosmos-sdk/x/slashing/client/cli"
+	stakecmd "github.com/yukimochizuki/cosmos-sdk/x/stake/client/cli"
 
-	_ "github.com/cosmos/cosmos-sdk/client/lcd/statik"
+	_ "github.com/yukimochizuki/cosmos-sdk/client/lcd/statik"
 )
 
 const (

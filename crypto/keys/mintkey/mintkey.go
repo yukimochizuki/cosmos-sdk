@@ -11,7 +11,7 @@ import (
 	"github.com/tendermint/tendermint/crypto/encoding/amino"
 	"github.com/tendermint/tendermint/crypto/xsalsa20symmetric"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/keyerror"
+	"github.com/yukimochizuki/cosmos-sdk/crypto/keys/keyerror"
 	cmn "github.com/tendermint/tendermint/libs/common"
 )
 

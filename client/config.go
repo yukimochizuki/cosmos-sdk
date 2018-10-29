@@ -3,7 +3,7 @@ package client
 import (
 	"bufio"
 	"fmt"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/types"
 	"github.com/mitchellh/go-homedir"
 	"github.com/pelletier/go-toml"
 	"github.com/spf13/cobra"

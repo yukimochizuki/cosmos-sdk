@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/utils"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov"
+	"github.com/yukimochizuki/cosmos-sdk/client/context"
+	"github.com/yukimochizuki/cosmos-sdk/client/utils"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/gov"
 
-	"github.com/cosmos/cosmos-sdk/x/gov/client"
+	"github.com/yukimochizuki/cosmos-sdk/x/gov/client"
 	"github.com/gorilla/mux"
 	"github.com/pkg/errors"
 )

@@ -7,10 +7,10 @@ import (
 	"github.com/spf13/viper"
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/codec" // XXX fix
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
+	"github.com/yukimochizuki/cosmos-sdk/client/context"
+	"github.com/yukimochizuki/cosmos-sdk/codec" // XXX fix
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/slashing"
 )
 
 // GetCmdQuerySigningInfo implements the command to query signing info.

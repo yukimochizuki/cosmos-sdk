@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	keys "github.com/cosmos/cosmos-sdk/crypto/keys"
-	keyerror "github.com/cosmos/cosmos-sdk/crypto/keys/keyerror"
+	"github.com/yukimochizuki/cosmos-sdk/client"
+	keys "github.com/yukimochizuki/cosmos-sdk/crypto/keys"
+	keyerror "github.com/yukimochizuki/cosmos-sdk/crypto/keys/keyerror"
 	"github.com/gorilla/mux"
 
 	"github.com/spf13/cobra"

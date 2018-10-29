@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	stake "github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	stake "github.com/yukimochizuki/cosmos-sdk/x/stake/types"
 )
 
 // Cap an infraction's slash amount by the slashing period in which it was committed

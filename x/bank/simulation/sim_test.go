@@ -5,10 +5,10 @@ import (
 	"math/rand"
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/mock"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/bank"
+	"github.com/yukimochizuki/cosmos-sdk/x/mock"
+	"github.com/yukimochizuki/cosmos-sdk/x/mock/simulation"
 )
 
 func TestBankWithRandomMessages(t *testing.T) {

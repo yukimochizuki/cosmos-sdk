@@ -14,8 +14,8 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 )
 
 var (
@@ -153,7 +153,7 @@ func testChangeNameHelper(name string) func(*BaseApp) {
 }
 
 // Test that the app hash is static
-// TODO: https://github.com/cosmos/cosmos-sdk/issues/520
+// TODO: https://github.com/yukimochizuki/cosmos-sdk/issues/520
 /*func TestStaticAppHash(t *testing.T) {
 	app := newBaseApp(t.Name())
 

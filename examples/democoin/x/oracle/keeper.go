@@ -1,9 +1,9 @@
 package oracle
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 )
 
 // Keeper of the oracle store

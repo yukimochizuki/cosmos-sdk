@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	keep "github.com/cosmos/cosmos-sdk/x/stake/keeper"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	keep "github.com/yukimochizuki/cosmos-sdk/x/stake/keeper"
+	"github.com/yukimochizuki/cosmos-sdk/x/stake/types"
 )
 
 //______________________________________________________________________

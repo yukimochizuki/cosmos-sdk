@@ -1,6 +1,6 @@
 package types
 
-import sdk "github.com/cosmos/cosmos-sdk/types"
+import sdk "github.com/yukimochizuki/cosmos-sdk/types"
 
 // expected stake keeper
 type StakeKeeper interface {

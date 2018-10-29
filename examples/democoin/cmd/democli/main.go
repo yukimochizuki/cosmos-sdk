@@ -5,22 +5,22 @@ import (
 
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	"github.com/cosmos/cosmos-sdk/client/lcd"
-	"github.com/cosmos/cosmos-sdk/client/rpc"
-	"github.com/cosmos/cosmos-sdk/client/tx"
+	"github.com/yukimochizuki/cosmos-sdk/client"
+	"github.com/yukimochizuki/cosmos-sdk/client/keys"
+	"github.com/yukimochizuki/cosmos-sdk/client/lcd"
+	"github.com/yukimochizuki/cosmos-sdk/client/rpc"
+	"github.com/yukimochizuki/cosmos-sdk/client/tx"
 
-	"github.com/cosmos/cosmos-sdk/version"
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	bankcmd "github.com/cosmos/cosmos-sdk/x/bank/client/cli"
-	ibccmd "github.com/cosmos/cosmos-sdk/x/ibc/client/cli"
+	"github.com/yukimochizuki/cosmos-sdk/version"
+	authcmd "github.com/yukimochizuki/cosmos-sdk/x/auth/client/cli"
+	bankcmd "github.com/yukimochizuki/cosmos-sdk/x/bank/client/cli"
+	ibccmd "github.com/yukimochizuki/cosmos-sdk/x/ibc/client/cli"
 
-	"github.com/cosmos/cosmos-sdk/examples/democoin/app"
-	"github.com/cosmos/cosmos-sdk/examples/democoin/types"
-	coolcmd "github.com/cosmos/cosmos-sdk/examples/democoin/x/cool/client/cli"
-	powcmd "github.com/cosmos/cosmos-sdk/examples/democoin/x/pow/client/cli"
-	simplestakingcmd "github.com/cosmos/cosmos-sdk/examples/democoin/x/simplestake/client/cli"
+	"github.com/yukimochizuki/cosmos-sdk/examples/democoin/app"
+	"github.com/yukimochizuki/cosmos-sdk/examples/democoin/types"
+	coolcmd "github.com/yukimochizuki/cosmos-sdk/examples/democoin/x/cool/client/cli"
+	powcmd "github.com/yukimochizuki/cosmos-sdk/examples/democoin/x/pow/client/cli"
+	simplestakingcmd "github.com/yukimochizuki/cosmos-sdk/examples/democoin/x/simplestake/client/cli"
 )
 
 // rootCmd is the entry point for this binary

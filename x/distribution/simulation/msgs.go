@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
+	"github.com/yukimochizuki/cosmos-sdk/baseapp"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/auth"
+	"github.com/yukimochizuki/cosmos-sdk/x/distribution"
+	"github.com/yukimochizuki/cosmos-sdk/x/mock/simulation"
 )
 
 // SimulateMsgSetWithdrawAddress

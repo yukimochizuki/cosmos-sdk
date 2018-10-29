@@ -3,7 +3,7 @@ package baseapp
 import (
 	"regexp"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 )
 
 // Router provides handlers for each transaction type.

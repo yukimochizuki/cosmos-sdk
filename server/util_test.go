@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
 	"github.com/stretchr/testify/require"
 )
 

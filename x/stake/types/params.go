@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/x/params"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/x/params"
 )
 
 const (

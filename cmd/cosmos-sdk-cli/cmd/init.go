@@ -9,12 +9,12 @@ import (
 
 	"path/filepath"
 
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/yukimochizuki/cosmos-sdk/version"
 	"github.com/spf13/cobra"
 	tmversion "github.com/tendermint/tendermint/version"
 )
 
-var remoteBasecoinPath = "github.com/cosmos/cosmos-sdk/examples/basecoin"
+var remoteBasecoinPath = "github.com/yukimochizuki/cosmos-sdk/examples/basecoin"
 
 // Replacer to replace all instances of basecoin/basecli/BasecoinApp to project specific names
 // Gets initialized when initCmd is executing after getting the project name from user
@@ -93,7 +93,7 @@ func copyBasecoinTemplate(projectName string, projectPath string, remoteProjectP
 func createGopkg(projectPath string) {
 	// Create gopkg.toml file
 	dependencies := map[string]string{
-		"github.com/cosmos/cosmos-sdk": "=" + version.Version,
+		"github.com/yukimochizuki/cosmos-sdk": "=" + version.Version,
 		"github.com/stretchr/testify":  "=1.2.1",
 		"github.com/spf13/cobra":       "=0.0.1",
 		"github.com/spf13/viper":       "=1.0.0",

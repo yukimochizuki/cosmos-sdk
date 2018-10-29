@@ -1,10 +1,10 @@
 package gov
 
 import (
-	codec "github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/params"
+	codec "github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/bank"
+	"github.com/yukimochizuki/cosmos-sdk/x/params"
 )
 
 // Parameter store default namestore

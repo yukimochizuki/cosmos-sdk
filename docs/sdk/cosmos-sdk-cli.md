@@ -6,8 +6,8 @@ Create a new blockchain project based on cosmos-sdk with a single command.
 # Installation
 
 ```shell
-$ go get github.com/cosmos/cosmos-sdk
-$ cd $GOPATH/src/github.com/cosmos/cosmos-sdk
+$ go get github.com/yukimochizuki/cosmos-sdk
+$ cd $GOPATH/src/github.com/yukimochizuki/cosmos-sdk
 $ make install_cosmos-sdk-cli
 ```
 

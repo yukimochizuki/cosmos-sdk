@@ -3,9 +3,9 @@ package lcd
 import (
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/utils"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/yukimochizuki/cosmos-sdk/client/context"
+	"github.com/yukimochizuki/cosmos-sdk/client/utils"
+	"github.com/yukimochizuki/cosmos-sdk/version"
 )
 
 // cli version REST handler endpoint

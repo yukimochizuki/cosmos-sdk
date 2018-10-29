@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 )
 

@@ -39,7 +39,7 @@ echo "set path=($path $GOPATH/bin)" >> ~/.tcshrc
 source ~/.tcshrc
 
 # get the code and move into repo
-set REPO=github.com/cosmos/cosmos-sdk
+set REPO=github.com/yukimochizuki/cosmos-sdk
 go get $REPO
 cd $GOPATH/src/$REPO
 

@@ -4,12 +4,12 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/utils"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/keyerror"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authtxb "github.com/cosmos/cosmos-sdk/x/auth/client/txbuilder"
+	"github.com/yukimochizuki/cosmos-sdk/client/context"
+	"github.com/yukimochizuki/cosmos-sdk/client/utils"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/crypto/keys/keyerror"
+	"github.com/yukimochizuki/cosmos-sdk/x/auth"
+	authtxb "github.com/yukimochizuki/cosmos-sdk/x/auth/client/txbuilder"
 )
 
 // SignBody defines the properties of a sign request's body.

@@ -3,7 +3,7 @@ package oracle
 import (
 	"bytes"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 )
 
 // Handler handles payload after it passes voting process

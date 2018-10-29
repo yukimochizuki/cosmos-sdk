@@ -18,8 +18,8 @@ import (
 	common "github.com/tendermint/tendermint/libs/common"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/baseapp"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 )
 
 // Simulate tests application by sending random messages.

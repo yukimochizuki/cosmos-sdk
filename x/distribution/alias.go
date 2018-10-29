@@ -2,9 +2,9 @@
 package distribution
 
 import (
-	"github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	"github.com/cosmos/cosmos-sdk/x/distribution/tags"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/distribution/keeper"
+	"github.com/yukimochizuki/cosmos-sdk/x/distribution/tags"
+	"github.com/yukimochizuki/cosmos-sdk/x/distribution/types"
 )
 
 type (

@@ -3,8 +3,8 @@ package slashing
 import (
 	"encoding/binary"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	stake "github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	stake "github.com/yukimochizuki/cosmos-sdk/x/stake/types"
 )
 
 // key prefix bytes

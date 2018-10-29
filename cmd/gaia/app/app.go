@@ -7,17 +7,17 @@ import (
 	"os"
 	"sort"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	distr "github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	bam "github.com/yukimochizuki/cosmos-sdk/baseapp"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/auth"
+	"github.com/yukimochizuki/cosmos-sdk/x/bank"
+	distr "github.com/yukimochizuki/cosmos-sdk/x/distribution"
+	"github.com/yukimochizuki/cosmos-sdk/x/gov"
+	"github.com/yukimochizuki/cosmos-sdk/x/mint"
+	"github.com/yukimochizuki/cosmos-sdk/x/params"
+	"github.com/yukimochizuki/cosmos-sdk/x/slashing"
+	"github.com/yukimochizuki/cosmos-sdk/x/stake"
 	abci "github.com/tendermint/tendermint/abci/types"
 	cmn "github.com/tendermint/tendermint/libs/common"
 	dbm "github.com/tendermint/tendermint/libs/db"
@@ -225,7 +225,7 @@ func (app *GaiaApp) initChainer(ctx sdk.Context, req abci.RequestInitChain) abci
 	var genesisState GenesisState
 	err := app.cdc.UnmarshalJSON(stateJSON, &genesisState)
 	if err != nil {
-		panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+		panic(err) // TODO https://github.com/yukimochizuki/cosmos-sdk/issues/468
 		// return sdk.ErrGenesisParse("").TraceCause(err, "")
 	}
 

@@ -2,12 +2,12 @@ package keys
 
 import (
 	"fmt"
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
+	"github.com/yukimochizuki/cosmos-sdk/crypto/keys"
 	"github.com/tendermint/tendermint/crypto"
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/keyerror"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/crypto/keys/keyerror"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 	"github.com/gorilla/mux"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"

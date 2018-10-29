@@ -3,7 +3,7 @@ package mock
 import (
 	"bytes"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 	"github.com/tendermint/tendermint/crypto"
 )
 

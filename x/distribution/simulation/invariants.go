@@ -3,10 +3,10 @@ package simulation
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	distr "github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
+	"github.com/yukimochizuki/cosmos-sdk/baseapp"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	distr "github.com/yukimochizuki/cosmos-sdk/x/distribution"
+	"github.com/yukimochizuki/cosmos-sdk/x/mock/simulation"
 	abci "github.com/tendermint/tendermint/abci/types"
 )
 

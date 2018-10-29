@@ -2,7 +2,7 @@ package server
 
 import (
 	"fmt"
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/yukimochizuki/cosmos-sdk/client"
 	"io/ioutil"
 	"net"
 	"os"

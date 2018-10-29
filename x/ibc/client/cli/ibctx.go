@@ -3,14 +3,14 @@ package cli
 import (
 	"encoding/hex"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/utils"
-	codec "github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	authtxb "github.com/cosmos/cosmos-sdk/x/auth/client/txbuilder"
-	"github.com/cosmos/cosmos-sdk/x/ibc"
+	"github.com/yukimochizuki/cosmos-sdk/client"
+	"github.com/yukimochizuki/cosmos-sdk/client/context"
+	"github.com/yukimochizuki/cosmos-sdk/client/utils"
+	codec "github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	authcmd "github.com/yukimochizuki/cosmos-sdk/x/auth/client/cli"
+	authtxb "github.com/yukimochizuki/cosmos-sdk/x/auth/client/txbuilder"
+	"github.com/yukimochizuki/cosmos-sdk/x/ibc"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"

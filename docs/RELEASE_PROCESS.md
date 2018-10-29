@@ -1,4 +1,4 @@
-### `cosmos/cosmos-sdk` Release Process
+### `yukimochizuki/cosmos-sdk` Release Process
 
 - [ ] 1. Decide on release designation (are we doing a patch, or minor version bump) and start a P.R. for the release
 - [ ] 2. Add commits/PRs that are desired for this release **that haven’t already been added to develop**

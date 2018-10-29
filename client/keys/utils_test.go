@@ -1,7 +1,7 @@
 package keys
 
 import (
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
+	"github.com/yukimochizuki/cosmos-sdk/crypto/keys"
 	"github.com/stretchr/testify/require"
 	"io/ioutil"
 	"os"

@@ -5,7 +5,7 @@ import (
 
 	dbm "github.com/tendermint/tendermint/libs/db"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 
 	"github.com/stretchr/testify/require"
 )

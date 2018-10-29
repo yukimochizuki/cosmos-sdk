@@ -3,12 +3,12 @@ package clitest
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
+	"github.com/yukimochizuki/cosmos-sdk/cmd/gaia/app"
 	"os"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/tests"
+	"github.com/yukimochizuki/cosmos-sdk/server"
+	"github.com/yukimochizuki/cosmos-sdk/tests"
 	"github.com/stretchr/testify/require"
 )
 

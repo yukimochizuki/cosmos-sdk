@@ -8,8 +8,8 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/store"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/store"
+	"github.com/yukimochizuki/cosmos-sdk/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 )
 

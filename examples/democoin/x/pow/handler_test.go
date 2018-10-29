@@ -8,10 +8,10 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	codec "github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	auth "github.com/cosmos/cosmos-sdk/x/auth"
-	bank "github.com/cosmos/cosmos-sdk/x/bank"
+	codec "github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	auth "github.com/yukimochizuki/cosmos-sdk/x/auth"
+	bank "github.com/yukimochizuki/cosmos-sdk/x/bank"
 )
 
 func TestPowHandler(t *testing.T) {
@@ -48,7 +48,7 @@ func TestPowHandler(t *testing.T) {
 	require.Nil(t, err)
 	require.Equal(t, newCount, uint64(1))
 
-	// todo assert correct coin change, awaiting https://github.com/cosmos/cosmos-sdk/pull/691
+	// todo assert correct coin change, awaiting https://github.com/yukimochizuki/cosmos-sdk/pull/691
 
 	difficulty = uint64(4)
 	nonce, proof = mine(addr, count, difficulty)

@@ -3,8 +3,8 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	types "github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	types "github.com/yukimochizuki/cosmos-sdk/x/stake/types"
 )
 
 // Slash a validator for an infraction committed at a known height
@@ -30,8 +30,8 @@ func (k Keeper) Slash(ctx sdk.Context, consAddr sdk.ConsAddress, infractionHeigh
 
 	// Amount of slashing = slash slashFactor * power at time of infraction
 	slashAmount := sdk.NewDec(power).Mul(slashFactor)
-	// ref https://github.com/cosmos/cosmos-sdk/issues/1348
-	// ref https://github.com/cosmos/cosmos-sdk/issues/1471
+	// ref https://github.com/yukimochizuki/cosmos-sdk/issues/1348
+	// ref https://github.com/yukimochizuki/cosmos-sdk/issues/1471
 
 	validator, found := k.GetValidatorByConsAddr(ctx, consAddr)
 	if !found {
@@ -180,7 +180,7 @@ func (k Keeper) slashUnbondingDelegation(ctx sdk.Context, unbondingDelegation ty
 		pool := k.GetPool(ctx)
 
 		// Burn loose tokens
-		// Ref https://github.com/cosmos/cosmos-sdk/pull/1278#discussion_r198657760
+		// Ref https://github.com/yukimochizuki/cosmos-sdk/pull/1278#discussion_r198657760
 		pool.LooseTokens = pool.LooseTokens.Sub(sdk.NewDecFromInt(unbondingSlashAmount))
 		k.SetPool(ctx, pool)
 	}

@@ -3,8 +3,8 @@ package auth
 import (
 	"encoding/json"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 	"github.com/tendermint/tendermint/crypto"
 )
 

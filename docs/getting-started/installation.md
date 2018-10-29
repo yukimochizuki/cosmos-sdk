@@ -25,12 +25,12 @@ version of the Cosmos-SDK for it in the [testnets
 repo](https://github.com/cosmos/testnets#testnet-status).
 Here we'll use the `master` branch, which contains the latest stable release.
 If necessary, make sure you `git checkout` the correct 
-[released version](https://github.com/cosmos/cosmos-sdk/releases).
+[released version](https://github.com/yukimochizuki/cosmos-sdk/releases).
 
 ```bash
 mkdir -p $GOPATH/src/github.com/cosmos
 cd $GOPATH/src/github.com/cosmos
-git clone https://github.com/cosmos/cosmos-sdk
+git clone https://github.com/yukimochizuki/cosmos-sdk
 cd cosmos-sdk && git checkout master
 make get_tools && make get_vendor_deps && make install
 ```

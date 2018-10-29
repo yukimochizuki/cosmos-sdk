@@ -1,7 +1,7 @@
 package pow
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
 )
 
 // Register concrete types on codec codec

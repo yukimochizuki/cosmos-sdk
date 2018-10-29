@@ -9,7 +9,7 @@ import (
 
 	"github.com/tendermint/tendermint/crypto/ed25519"
 
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/types"
 )
 
 var invalidStrs = []string{

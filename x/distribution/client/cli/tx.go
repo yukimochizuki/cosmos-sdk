@@ -7,14 +7,14 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/utils"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	authtxb "github.com/cosmos/cosmos-sdk/x/auth/client/txbuilder"
+	"github.com/yukimochizuki/cosmos-sdk/client/context"
+	"github.com/yukimochizuki/cosmos-sdk/client/utils"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	authcmd "github.com/yukimochizuki/cosmos-sdk/x/auth/client/cli"
+	authtxb "github.com/yukimochizuki/cosmos-sdk/x/auth/client/txbuilder"
 
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/distribution/types"
 )
 
 var (

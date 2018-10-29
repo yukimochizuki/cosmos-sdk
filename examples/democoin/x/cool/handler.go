@@ -3,7 +3,7 @@ package cool
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 )
 
 // This is just an example to demonstrate a functional custom module

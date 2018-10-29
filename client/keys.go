@@ -1,7 +1,7 @@
 package client
 
 import (
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
+	"github.com/yukimochizuki/cosmos-sdk/crypto/keys"
 	dbm "github.com/tendermint/tendermint/libs/db"
 )
 

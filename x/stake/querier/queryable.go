@@ -1,10 +1,10 @@
 package querier
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	keep "github.com/cosmos/cosmos-sdk/x/stake/keeper"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	keep "github.com/yukimochizuki/cosmos-sdk/x/stake/keeper"
+	"github.com/yukimochizuki/cosmos-sdk/x/stake/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 )
 

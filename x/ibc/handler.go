@@ -1,8 +1,8 @@
 package ibc
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/bank"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/bank"
 )
 
 func NewHandler(ibcm Mapper, ck bank.Keeper) sdk.Handler {

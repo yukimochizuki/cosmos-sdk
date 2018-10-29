@@ -7,8 +7,8 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	bapp "github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	bapp "github.com/yukimochizuki/cosmos-sdk/baseapp"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 )
 
 const (

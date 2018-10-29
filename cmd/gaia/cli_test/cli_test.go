@@ -16,16 +16,16 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	cmn "github.com/tendermint/tendermint/libs/common"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/tests"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	"github.com/yukimochizuki/cosmos-sdk/client"
+	"github.com/yukimochizuki/cosmos-sdk/client/keys"
+	"github.com/yukimochizuki/cosmos-sdk/cmd/gaia/app"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/server"
+	"github.com/yukimochizuki/cosmos-sdk/tests"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/auth"
+	"github.com/yukimochizuki/cosmos-sdk/x/gov"
+	"github.com/yukimochizuki/cosmos-sdk/x/stake"
 )
 
 var (

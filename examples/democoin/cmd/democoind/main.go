@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/yukimochizuki/cosmos-sdk/client"
 	"github.com/spf13/viper"
 	"github.com/tendermint/tendermint/libs/common"
 	"github.com/tendermint/tendermint/p2p"
@@ -19,10 +19,10 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	gaiaInit "github.com/cosmos/cosmos-sdk/cmd/gaia/init"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/examples/democoin/app"
-	"github.com/cosmos/cosmos-sdk/server"
+	gaiaInit "github.com/yukimochizuki/cosmos-sdk/cmd/gaia/init"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/examples/democoin/app"
+	"github.com/yukimochizuki/cosmos-sdk/server"
 )
 
 const (

@@ -71,7 +71,7 @@ Out of all validators that signaled themselves, the 100 with the most stake are 
 
 The Testnet is a great environment to test your validator setup before launch.
 
-We view testnet participation as a great way to signal to the community that you are ready and able to operate a validator. You can find all relevant information about the testnet [here](https://github.com/cosmos/cosmos-sdk/tree/develop/cmd/gaia/testnets) and [here](https://github.com/cosmos/testnets).
+We view testnet participation as a great way to signal to the community that you are ready and able to operate a validator. You can find all relevant information about the testnet [here](https://github.com/yukimochizuki/cosmos-sdk/tree/develop/cmd/gaia/testnets) and [here](https://github.com/cosmos/testnets).
 
 ### What are the different types of keys?
 

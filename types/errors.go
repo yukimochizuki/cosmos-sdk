@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
 	cmn "github.com/tendermint/tendermint/libs/common"
 
 	abci "github.com/tendermint/tendermint/abci/types"

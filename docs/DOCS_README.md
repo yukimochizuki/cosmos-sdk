@@ -6,8 +6,8 @@ The documentation for the Cosmos SDK is hosted at:
 - https://cosmos-staging.interblock.io/docs/
 
 built from the files in this (`/docs`) directory for
-[master](https://github.com/cosmos/cosmos-sdk/tree/master/docs)
-and [develop](https://github.com/cosmos/cosmos-sdk/tree/develop/docs),
+[master](https://github.com/yukimochizuki/cosmos-sdk/tree/master/docs)
+and [develop](https://github.com/yukimochizuki/cosmos-sdk/tree/develop/docs),
 respectively.
 
 Besides, gaia-lite API docs are also provided by gaia-lite. The default API docs page is:

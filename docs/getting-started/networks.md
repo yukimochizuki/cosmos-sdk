@@ -1,11 +1,11 @@
 # Networks
 
 There are a variety of ways to setup either local or remote networks with automation, detailed below.
-All the required files are found in the [networks directory](https://github.com/cosmos/cosmos-sdk/tree/develop/networks) and additionally the `local` or `remote` sub-directories.
+All the required files are found in the [networks directory](https://github.com/yukimochizuki/cosmos-sdk/tree/develop/networks) and additionally the `local` or `remote` sub-directories.
 
 ## Local Testnet
 
-From the [networks/local directory](https://github.com/cosmos/cosmos-sdk/tree/develop/networks/local):
+From the [networks/local directory](https://github.com/yukimochizuki/cosmos-sdk/tree/develop/networks/local):
 
 ### Requirements
 
@@ -21,7 +21,7 @@ Note the binary will be mounted into the container so it can be updated without
 rebuilding the image.
 
 ```
-cd $GOPATH/src/github.com/cosmos/cosmos-sdk
+cd $GOPATH/src/github.com/yukimochizuki/cosmos-sdk
 
 # Build the linux binary in ./build
 make build-linux
@@ -120,7 +120,7 @@ BINARY=gaiafoo make localnet-start
 
 ## Remote Testnet
 
-The following should be run from the [networks directory](https://github.com/cosmos/cosmos-sdk/tree/develop/networks).
+The following should be run from the [networks directory](https://github.com/yukimochizuki/cosmos-sdk/tree/develop/networks).
 
 ### Terraform & Ansible
 
@@ -193,7 +193,7 @@ make datadog-install
 To create a single node testnet:
 
 ```
-cd $GOPATH/src/github.com/cosmos/cosmos-sdk
+cd $GOPATH/src/github.com/yukimochizuki/cosmos-sdk
 
 # Clear the build folder
 rm -rf ./build

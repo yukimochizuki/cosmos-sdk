@@ -7,13 +7,13 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/mock"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/bank"
+	"github.com/yukimochizuki/cosmos-sdk/x/gov"
+	"github.com/yukimochizuki/cosmos-sdk/x/mock"
+	"github.com/yukimochizuki/cosmos-sdk/x/mock/simulation"
+	"github.com/yukimochizuki/cosmos-sdk/x/params"
+	"github.com/yukimochizuki/cosmos-sdk/x/stake"
 )
 
 // TestGovWithRandomMessages

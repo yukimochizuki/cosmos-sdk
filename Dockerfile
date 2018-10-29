@@ -8,7 +8,7 @@ FROM golang:alpine AS build-env
 ENV PACKAGES make git libc-dev bash gcc linux-headers eudev-dev
 
 # Set working directory for the build
-WORKDIR /go/src/github.com/cosmos/cosmos-sdk
+WORKDIR /go/src/github.com/yukimochizuki/cosmos-sdk
 
 # Add source files
 COPY . .

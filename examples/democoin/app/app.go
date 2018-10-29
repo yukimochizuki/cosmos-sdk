@@ -10,18 +10,18 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/ibc"
+	bam "github.com/yukimochizuki/cosmos-sdk/baseapp"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/x/auth"
+	"github.com/yukimochizuki/cosmos-sdk/x/bank"
+	"github.com/yukimochizuki/cosmos-sdk/x/ibc"
 
-	"github.com/cosmos/cosmos-sdk/examples/democoin/types"
-	"github.com/cosmos/cosmos-sdk/examples/democoin/x/cool"
-	"github.com/cosmos/cosmos-sdk/examples/democoin/x/pow"
-	"github.com/cosmos/cosmos-sdk/examples/democoin/x/simplestake"
-	"github.com/cosmos/cosmos-sdk/examples/democoin/x/sketchy"
+	"github.com/yukimochizuki/cosmos-sdk/examples/democoin/types"
+	"github.com/yukimochizuki/cosmos-sdk/examples/democoin/x/cool"
+	"github.com/yukimochizuki/cosmos-sdk/examples/democoin/x/pow"
+	"github.com/yukimochizuki/cosmos-sdk/examples/democoin/x/simplestake"
+	"github.com/yukimochizuki/cosmos-sdk/examples/democoin/x/sketchy"
 )
 
 const (
@@ -138,14 +138,14 @@ func (app *DemocoinApp) initChainerFn(coolKeeper cool.Keeper, powKeeper pow.Keep
 		genesisState := new(types.GenesisState)
 		err := app.cdc.UnmarshalJSON(stateJSON, genesisState)
 		if err != nil {
-			panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+			panic(err) // TODO https://github.com/yukimochizuki/cosmos-sdk/issues/468
 			// return sdk.ErrGenesisParse("").TraceCause(err, "")
 		}
 
 		for _, gacc := range genesisState.Accounts {
 			acc, err := gacc.ToAppAccount()
 			if err != nil {
-				panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+				panic(err) // TODO https://github.com/yukimochizuki/cosmos-sdk/issues/468
 				//	return sdk.ErrGenesisParse("").TraceCause(err, "")
 			}
 			app.accountKeeper.SetAccount(ctx, acc)
@@ -154,13 +154,13 @@ func (app *DemocoinApp) initChainerFn(coolKeeper cool.Keeper, powKeeper pow.Keep
 		// Application specific genesis handling
 		err = cool.InitGenesis(ctx, app.coolKeeper, genesisState.CoolGenesis)
 		if err != nil {
-			panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+			panic(err) // TODO https://github.com/yukimochizuki/cosmos-sdk/issues/468
 			//	return sdk.ErrGenesisParse("").TraceCause(err, "")
 		}
 
 		err = pow.InitGenesis(ctx, app.powKeeper, genesisState.POWGenesis)
 		if err != nil {
-			panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+			panic(err) // TODO https://github.com/yukimochizuki/cosmos-sdk/issues/468
 			//	return sdk.ErrGenesisParse("").TraceCause(err, "")
 		}
 

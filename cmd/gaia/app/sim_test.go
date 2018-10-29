@@ -13,19 +13,19 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authsim "github.com/cosmos/cosmos-sdk/x/auth/simulation"
-	banksim "github.com/cosmos/cosmos-sdk/x/bank/simulation"
-	distr "github.com/cosmos/cosmos-sdk/x/distribution"
-	distrsim "github.com/cosmos/cosmos-sdk/x/distribution/simulation"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	govsim "github.com/cosmos/cosmos-sdk/x/gov/simulation"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	slashingsim "github.com/cosmos/cosmos-sdk/x/slashing/simulation"
-	stake "github.com/cosmos/cosmos-sdk/x/stake"
-	stakesim "github.com/cosmos/cosmos-sdk/x/stake/simulation"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
+	authsim "github.com/yukimochizuki/cosmos-sdk/x/auth/simulation"
+	banksim "github.com/yukimochizuki/cosmos-sdk/x/bank/simulation"
+	distr "github.com/yukimochizuki/cosmos-sdk/x/distribution"
+	distrsim "github.com/yukimochizuki/cosmos-sdk/x/distribution/simulation"
+	"github.com/yukimochizuki/cosmos-sdk/x/gov"
+	govsim "github.com/yukimochizuki/cosmos-sdk/x/gov/simulation"
+	"github.com/yukimochizuki/cosmos-sdk/x/mint"
+	"github.com/yukimochizuki/cosmos-sdk/x/mock/simulation"
+	"github.com/yukimochizuki/cosmos-sdk/x/slashing"
+	slashingsim "github.com/yukimochizuki/cosmos-sdk/x/slashing/simulation"
+	stake "github.com/yukimochizuki/cosmos-sdk/x/stake"
+	stakesim "github.com/yukimochizuki/cosmos-sdk/x/stake/simulation"
 )
 
 var (
@@ -135,7 +135,7 @@ func invariants(app *GaiaApp) []simulation.Invariant {
 }
 
 // Profile with:
-// /usr/local/go/bin/go test -benchmem -run=^$ github.com/cosmos/cosmos-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$ -SimulationCommit=true -cpuprofile cpu.out
+// /usr/local/go/bin/go test -benchmem -run=^$ github.com/yukimochizuki/cosmos-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$ -SimulationCommit=true -cpuprofile cpu.out
 func BenchmarkFullGaiaSimulation(b *testing.B) {
 	// Setup Gaia application
 	var logger log.Logger

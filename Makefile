@@ -2,7 +2,7 @@ PACKAGES_NOSIMULATION=$(shell go list ./... | grep -v '/simulation')
 PACKAGES_SIMTEST=$(shell go list ./... | grep '/simulation')
 VERSION := $(shell git describe --tags --long | sed 's/v\(.*\)/\1/')
 BUILD_TAGS = netgo ledger
-BUILD_FLAGS = -tags "${BUILD_TAGS}" -ldflags "-X github.com/cosmos/cosmos-sdk/version.Version=${VERSION}"
+BUILD_FLAGS = -tags "${BUILD_TAGS}" -ldflags "-X github.com/yukimochizuki/cosmos-sdk/version.Version=${VERSION}"
 GCC := $(shell command -v gcc 2> /dev/null)
 LEDGER_ENABLED ?= true
 UNAME_S := $(shell uname -s)
@@ -23,7 +23,7 @@ ci: get_tools get_vendor_deps install test_cover test_lint test
 check-ledger:
 ifeq ($(LEDGER_ENABLED),true)
    	ifeq ($(UNAME_S),OpenBSD)
-   		$(info "OpenBSD detected, disabling ledger support (https://github.com/cosmos/cosmos-sdk/issues/1988)")
+   		$(info "OpenBSD detected, disabling ledger support (https://github.com/yukimochizuki/cosmos-sdk/issues/1988)")
 TMP_BUILD_TAGS := $(BUILD_TAGS)
 BUILD_TAGS = $(filter-out ledger, $(TMP_BUILD_TAGS))
    	else
@@ -130,14 +130,14 @@ update_vendor_deps:
 draw_deps:
 	@# requires brew install graphviz or apt-get install graphviz
 	go get github.com/RobotsAndPencils/goviz
-	@goviz -i github.com/cosmos/cosmos-sdk/cmd/gaia/cmd/gaiad -d 2 | dot -Tpng -o dependency-graph.png
+	@goviz -i github.com/yukimochizuki/cosmos-sdk/cmd/gaia/cmd/gaiad -d 2 | dot -Tpng -o dependency-graph.png
 
 
 ########################################
 ### Documentation
 
 godocs:
-	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/cosmos/cosmos-sdk/types"
+	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/yukimochizuki/cosmos-sdk/types"
 	godoc -http=:6060
 
 
@@ -147,11 +147,11 @@ godocs:
 test: test_unit
 
 test_cli:
-	@go test -count 1 -p 1 `go list github.com/cosmos/cosmos-sdk/cmd/gaia/cli_test` -tags=cli_test
+	@go test -count 1 -p 1 `go list github.com/yukimochizuki/cosmos-sdk/cmd/gaia/cli_test` -tags=cli_test
 
 test_examples:
-	@go test -count 1 -p 1 `go list github.com/cosmos/cosmos-sdk/examples/basecoin/cli_test` -tags=cli_test
-	@go test -count 1 -p 1 `go list github.com/cosmos/cosmos-sdk/examples/democoin/cli_test` -tags=cli_test
+	@go test -count 1 -p 1 `go list github.com/yukimochizuki/cosmos-sdk/examples/basecoin/cli_test` -tags=cli_test
+	@go test -count 1 -p 1 `go list github.com/yukimochizuki/cosmos-sdk/examples/democoin/cli_test` -tags=cli_test
 
 test_unit:
 	@VERSION=$(VERSION) go test $(PACKAGES_NOSIMULATION)
@@ -180,11 +180,11 @@ SIM_BLOCK_SIZE ?= 200
 SIM_COMMIT ?= true
 test_sim_gaia_benchmark:
 	@echo "Running Gaia benchmark for numBlocks=$(SIM_NUM_BLOCKS), blockSize=$(SIM_BLOCK_SIZE). This may take awhile!"
-	@go test -benchmem -run=^$$ github.com/cosmos/cosmos-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$$  -SimulationEnabled=true -SimulationNumBlocks=$(SIM_NUM_BLOCKS) -SimulationBlockSize=$(SIM_BLOCK_SIZE) -SimulationCommit=$(SIM_COMMIT) -timeout 24h
+	@go test -benchmem -run=^$$ github.com/yukimochizuki/cosmos-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$$  -SimulationEnabled=true -SimulationNumBlocks=$(SIM_NUM_BLOCKS) -SimulationBlockSize=$(SIM_BLOCK_SIZE) -SimulationCommit=$(SIM_COMMIT) -timeout 24h
 
 test_sim_gaia_profile:
 	@echo "Running Gaia benchmark for numBlocks=$(SIM_NUM_BLOCKS), blockSize=$(SIM_BLOCK_SIZE). This may take awhile!"
-	@go test -benchmem -run=^$$ github.com/cosmos/cosmos-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$$ -SimulationEnabled=true -SimulationNumBlocks=$(SIM_NUM_BLOCKS) -SimulationBlockSize=$(SIM_BLOCK_SIZE) -SimulationCommit=$(SIM_COMMIT) -timeout 24h -cpuprofile cpu.out -memprofile mem.out
+	@go test -benchmem -run=^$$ github.com/yukimochizuki/cosmos-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$$ -SimulationEnabled=true -SimulationNumBlocks=$(SIM_NUM_BLOCKS) -SimulationBlockSize=$(SIM_BLOCK_SIZE) -SimulationCommit=$(SIM_COMMIT) -timeout 24h -cpuprofile cpu.out -memprofile mem.out
 
 test_cover:
 	@export VERSION=$(VERSION); bash tests/test_cover.sh
@@ -210,12 +210,12 @@ benchmark:
 DEVDOC_SAVE = docker commit `docker ps -a -n 1 -q` devdoc:local
 
 devdoc_init:
-	docker run -it -v "$(CURDIR):/go/src/github.com/cosmos/cosmos-sdk" -w "/go/src/github.com/cosmos/cosmos-sdk" tendermint/devdoc echo
+	docker run -it -v "$(CURDIR):/go/src/github.com/yukimochizuki/cosmos-sdk" -w "/go/src/github.com/yukimochizuki/cosmos-sdk" tendermint/devdoc echo
 	# TODO make this safer
 	$(call DEVDOC_SAVE)
 
 devdoc:
-	docker run -it -v "$(CURDIR):/go/src/github.com/cosmos/cosmos-sdk" -w "/go/src/github.com/cosmos/cosmos-sdk" devdoc:local bash
+	docker run -it -v "$(CURDIR):/go/src/github.com/yukimochizuki/cosmos-sdk" -w "/go/src/github.com/yukimochizuki/cosmos-sdk" devdoc:local bash
 
 devdoc_save:
 	# TODO make this safer

@@ -7,15 +7,15 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/yukimochizuki/cosmos-sdk/client"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/x/auth"
 
 	"github.com/spf13/viper"
 
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	cskeys "github.com/cosmos/cosmos-sdk/crypto/keys"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/client/keys"
+	cskeys "github.com/yukimochizuki/cosmos-sdk/crypto/keys"
+	"github.com/yukimochizuki/cosmos-sdk/types"
 	"github.com/tendermint/tendermint/libs/cli"
 	"github.com/tendermint/tendermint/libs/log"
 	tmlite "github.com/tendermint/tendermint/lite"

@@ -8,13 +8,13 @@ import (
 
 	"github.com/tendermint/tendermint/p2p"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	gaiaInit "github.com/cosmos/cosmos-sdk/cmd/gaia/init"
+	"github.com/yukimochizuki/cosmos-sdk/baseapp"
+	gaiaInit "github.com/yukimochizuki/cosmos-sdk/cmd/gaia/init"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/examples/basecoin/app"
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/yukimochizuki/cosmos-sdk/client"
+	"github.com/yukimochizuki/cosmos-sdk/codec"
+	"github.com/yukimochizuki/cosmos-sdk/examples/basecoin/app"
+	"github.com/yukimochizuki/cosmos-sdk/server"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	abci "github.com/tendermint/tendermint/abci/types"

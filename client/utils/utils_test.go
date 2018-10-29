@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/yukimochizuki/cosmos-sdk/cmd/gaia/app"
+	sdk "github.com/yukimochizuki/cosmos-sdk/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/tendermint/tendermint/libs/common"
 )
